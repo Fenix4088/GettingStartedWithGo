@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"gettingStartedWithGo/basics"
-	"gettingStartedWithGo/structures"
-
+	structspractice "gettingStartedWithGo/structs-practice"
+	// "gettingStartedWithGo/structures"
 	// bmicalculator "gettingStartedWithGo/bmiCalculator"
 )
 
@@ -18,6 +18,8 @@ func main() {
 
 	// bmicalculator.Bmi()
 
-	structures.InputUserData()
+	// structures.InputUserData()
+
+	structspractice.Init()
 
 }
