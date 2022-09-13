@@ -13,10 +13,16 @@ var reader = bufio.NewReader(os.Stdin)
 func InputUserData() {
 	firstName := getUserData("Please enter your first name: ")
 	lastName := getUserData("Please enter your last name: ")
-	birthdate := getUserData("Please enter your birthdate (MM/DD/YYYY): ")
+	birthDate := getUserData("Please enter your birthdate (MM/DD/YYYY): ")
 
-	fmt.Println(firstName, lastName, birthdate)
+	newUser := createNewUser(firstName, lastName, birthDate)
+
+	outputUserData(newUser)
 	
+}
+
+func outputUserData(user *User) {
+	fmt.Printf("My name is %v %v (born on %v)", user.firstName, user.lastName, user.birthDate)
 }
 
 func getUserData(promptText string) string {
