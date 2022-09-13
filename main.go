@@ -3,7 +3,9 @@ package main
 import (
 	"fmt"
 	"gettingStartedWithGo/basics"
-	bmicalculator "gettingStartedWithGo/bmiCalculator"
+	"gettingStartedWithGo/structures"
+
+	// bmicalculator "gettingStartedWithGo/bmiCalculator"
 )
 
 func main() {
@@ -13,6 +15,9 @@ func main() {
 
 	fmt.Println(circ)
 	fmt.Println(explenation)
-	bmicalculator.Bmi()
+
+	// bmicalculator.Bmi()
+
+	structures.InputUserData()
 
 }
