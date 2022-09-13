@@ -17,11 +17,11 @@ func InputUserData() {
 
 	newUser := createNewUser(firstName, lastName, birthDate)
 
-	outputUserData(newUser)
+	newUser.outputUserData()
 	
 }
 
-func outputUserData(user *User) {
+func (user *User) outputUserData() {
 	fmt.Printf("My name is %v %v (born on %v)", user.firstName, user.lastName, user.birthDate)
 }
 
